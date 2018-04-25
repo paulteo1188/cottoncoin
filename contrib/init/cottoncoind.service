@@ -1,0 +1,26 @@
+[Unit]
+Description=COTN coin's distributed currency daemon
+After=network.target
+
+[Service]
+User=cottoncoin
+Group=cottoncoin
+
+Type=forking
+PIDFile=/var/lib/cottoncoind/cottoncoind.pid
+
+ExecStart=/usr/bin/cottoncoind -daemon -pid=/var/lib/cottoncoind/cottoncoind.pid \
+          -conf=/etc/cottoncoin/cottoncoin.conf -datadir=/var/lib/cottoncoind
+
+ExecStop=-/usr/bin/cottoncoin-cli -conf=/etc/cottoncoin/cottoncoin.conf \
+         -datadir=/var/lib/cottoncoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

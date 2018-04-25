@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=COTNcoin
+Comment=COTNcoin P2P Cryptocurrency
+Exec=cottoncoin-qt %u
+Terminal=false
+Type=Application
+Icon=cottoncoin128
+MimeType=x-scheme-handler/cottoncoin;
+Categories=Office;Finance;
+Name[en_US]=cottoncoin-qt.desktop
