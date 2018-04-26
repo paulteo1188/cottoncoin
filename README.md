@@ -12,7 +12,7 @@ More information at [cottonco.in](http://www.cottonco.in)
 
 ### Coin Specs
 | Block Time                  | 60 Seconds      |
-| Max Coin Supply (PoW Phase) | 500,000 COTN    |
+| Max Coin Supply (PoW Phase) | 2,000,000 COTN    |
 | Max Coin Supply (PoS Phase) | 20,500,000 COTN |
 | Premine                     | 2,000,000 COTN  |
 
