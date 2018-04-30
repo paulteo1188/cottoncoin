@@ -54,12 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000e49817c7d0b2bc420381001e7fd1363e4dca5d279c4b9c4317a75efd33a"));
+    (1, uint256("0x1cae58cd87af448461692c1f912a958e1ab59b12e2bcf88d792773dbc361225c"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1524042316, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1525110113, // * UNIX timestamp of last checkpoint block
+    2,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -136,9 +136,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x07cbcacfc822fba6bbeb05312258fa43b96a68fc310af8dfcec604591763f7cf"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("174.138.44.238", "165.227.201.182"));
-        vSeeds.push_back(CDNSSeedData("162.243.164.207", "165.227.197.82"));
-        vSeeds.push_back(CDNSSeedData("159.65.236.125", "159.89.234.112"));
+        vSeeds.push_back(CDNSSeedData("165.227.201.182", "165.227.201.182"));
+        vSeeds.push_back(CDNSSeedData("162.243.164.207", "162.243.164.207"));
+        vSeeds.push_back(CDNSSeedData("159.65.236.125", "159.65.236.125"));
+	vSeeds.push_back(CDNSSeedData("174.138.44.238", "174.138.44.238"));
+        vSeeds.push_back(CDNSSeedData("165.227.197.82", "165.227.197.82"));
+        vSeeds.push_back(CDNSSeedData("159.89.234.112", "159.89.234.112"));
 
         // COTN coin addresses start with 'G'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38);
@@ -165,7 +168,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
-        nPoolMaxTransactions = 3;
+        nPoolMaxTransactions = 2;
         strSporkKey = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
         strMasternodePoolDummyAddress = "GSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis creation
