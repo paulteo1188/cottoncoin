@@ -61,7 +61,7 @@ echo "Type the IP of this server, followed by [ENTER]:"
 read IP
 
 echo ""
-echo "How many nodes do you want to create on this server? [min:0 Max:20]  followed by [ENTER]:"
+echo "How many nodes do you want to create on this server? [min:1 Max:20]  followed by [ENTER]:"
 read MNCOUNT
 
 
