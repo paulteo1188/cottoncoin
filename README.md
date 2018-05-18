@@ -1,4 +1,4 @@
-sCOTN coin Core integration/staging repository
+COTN coin Core integration/staging repository
 =================================================
 
 COTTON Coin (COTN) is a sustainable cryptocurrency modeled after Satoshi Nakamoto’s vision for Bitcoin. It is a decentralized, peer-to-peer transactional currency designed to offer a solution to the problems faced by cotton miners in third world countries. COTTON Coin is envisioned to replace fiat currency as the primary currency in global cotton trade. In addition, COTTON Coin has a blockchain backend traceability system to authenticate the source of cotton, monitor prices and track delivery. Access to the backend system is via an advanced B2B and B2C dApps.
@@ -6,7 +6,7 @@ COTTON Coin (COTN) is a sustainable cryptocurrency modeled after Satoshi Nakamot
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode
   technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 2,500 COTN.
+  with a collateral of 3,000 COTN.
 
 More information at [cottonco.in](http://www.cottonco.in)
 
